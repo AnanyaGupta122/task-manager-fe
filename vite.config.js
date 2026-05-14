@@ -5,7 +5,10 @@ export default defineConfig({
   plugins: [react()],
   preview: {
     host: '0.0.0.0',
-    port: process.env.PORT || 4173,
-    allowedHosts: 'all'
+    port: process.env.PORT || 8080,
+    allowedHosts: [
+      'task-manager-fe-production-6955.up.railway.app',
+      'localhost'
+    ]
   }
 })
